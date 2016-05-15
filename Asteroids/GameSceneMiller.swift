@@ -1,14 +1,15 @@
 //
-//  GameScene.swift
+//  GameSceneMiller.swift
 //  Asteroids
 //
-//  Created by Lucas Kane on 4/20/16.
-//  Copyright (c) 2016 Lucas Kane. All rights reserved.
+//  Created by Lucas Kane on 5/10/16.
+//  Copyright © 2016 Lucas Kane. All rights reserved.
 //
+
 
 import SpriteKit
 
-class GameScene: SKScene {
+class GameSceneMiller: SKScene {
     var score = 0
     var highscore = 0
     var health = 5
@@ -17,7 +18,7 @@ class GameScene: SKScene {
     var currentNumberOfShips : Int?
     var timeBetweenShips : Double?
     var moverSpeed = 5.0
-    let moveFactor = 1.025
+    let moveFactor = 1.05
     var now : NSDate?
     var nextTime : NSDate?
     var gameOverLabel : SKLabelNode?
@@ -30,8 +31,8 @@ class GameScene: SKScene {
     let replayButtonTex = SKTexture(imageNamed: "replay")
     
     
-
-        
+    
+    
     
     
     /*
@@ -106,7 +107,7 @@ class GameScene: SKScene {
     Adds the ship to the scene
     */
     func createShip(p:CGPoint, destination:CGPoint) {
-        let sprite = SKSpriteNode(imageNamed: "Spaceship")
+        let sprite = SKSpriteNode(imageNamed: "Brad")
         sprite.name = "Destroyable"
         sprite.xScale = 0.5
         sprite.yScale = 0.5
@@ -116,8 +117,8 @@ class GameScene: SKScene {
         let action = SKAction.moveTo(destination, duration: duration)
         sprite.runAction(SKAction.repeatActionForever(action))
         
-        let rotationAction = SKAction.rotateToAngle(CGFloat(3.142), duration: 0)
-        sprite.runAction(SKAction.repeatAction(rotationAction, count: 0))
+       /* let rotationAction = SKAction.rotateToAngle(CGFloat(3.142), duration: 0)
+        sprite.runAction(SKAction.repeatAction(rotationAction, count: 0))*/
         
         currentNumberOfShips?+=1
         self.addChild(sprite)
@@ -142,18 +143,18 @@ class GameScene: SKScene {
                     
                     if (score > highscore){
                         highscore = score
-                        var highscoreDefault = NSUserDefaults.standardUserDefaults()
-                        highscoreDefault.setValue(highscore, forKey: "HighScore")
-                        highscoreDefault.synchronize()
-                            
-                            if (highscoreDefault.valueForKey("HighScore") != nil) {
-                               let highscore = highscoreDefault.valueForKey("Highscore")
-                                highScoreLabel?.text = "HighScore: \(highscore)"
-                            }
+                        var highscoreDefaultM = NSUserDefaults.standardUserDefaults()
+                        highscoreDefaultM.setValue(highscore, forKey: "HighScoreM")
+                        highscoreDefaultM.synchronize()
+                        
+                        if (highscoreDefaultM.valueForKey("HighScoreM") != nil) {
+                            let highscoreM = highscoreDefaultM.valueForKey("HighscoreM")
+                            highScoreLabel?.text = "HighScoreM: \(highscoreM)"
+                        }
                         
                     }
-                
-                 
+                    
+                    
                     
                 }
             }
@@ -168,7 +169,7 @@ class GameScene: SKScene {
                         view!.presentScene(scene)
                     }
                 }
-            /* reset game on the replay button */
+                /* reset game on the replay button */
                 if (gameOver==true){
                     let pos = touch.locationInNode(self)
                     let node = self.nodeAtPoint(pos)
@@ -176,11 +177,11 @@ class GameScene: SKScene {
                     if node == replayButton {
                         initializeValues()
                     }
-
+                    
+                }
+                
             }
             
-            }
-        
         }
     }
     
@@ -220,7 +221,7 @@ class GameScene: SKScene {
         gameOverLabel?.fontSize = 50;
         gameOverLabel?.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame) + 100);
         
-    
+        
         highScoreLabel = SKLabelNode(fontNamed:"System")
         highScoreLabel?.text = "HighScore: \(highscore)"
         highScoreLabel?.fontColor = SKColor.redColor()
@@ -239,8 +240,8 @@ class GameScene: SKScene {
         self.addChild(highScoreLabel!)
     }
     
-
-
+    
+    
     
     
 }

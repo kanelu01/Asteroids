@@ -13,8 +13,9 @@ class GameViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
-        if let scene = GameScene(fileNamed:"GameScene") {
+        if let scene = MenuScene(fileNamed:"MenuScene") {
             // Configure the view.
             let skView = self.view as! SKView
             skView.showsFPS = true
@@ -27,6 +28,7 @@ class GameViewController: UIViewController {
             scene.scaleMode = .AspectFill
             
             skView.presentScene(scene)
+        
         }
     }
 

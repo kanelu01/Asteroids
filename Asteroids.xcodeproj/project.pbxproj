@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA140D021CCFA51D000A80D5 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA140D011CCFA51D000A80D5 /* MenuScene.swift */; };
+		FA140D041CCFA596000A80D5 /* MenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FA140D031CCFA596000A80D5 /* MenuScene.sks */; };
 		FA1642A11CC82FB5005933AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1642A01CC82FB5005933AB /* AppDelegate.swift */; };
 		FA1642A31CC82FB5005933AB /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FA1642A21CC82FB5005933AB /* GameScene.sks */; };
 		FA1642A51CC82FB5005933AB /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1642A41CC82FB5005933AB /* GameScene.swift */; };
@@ -16,6 +18,10 @@
 		FA1642AF1CC82FB5005933AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1642AD1CC82FB5005933AB /* LaunchScreen.storyboard */; };
 		FA1642BA1CC82FB6005933AB /* AsteroidsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1642B91CC82FB6005933AB /* AsteroidsTests.swift */; };
 		FA1642C51CC82FB6005933AB /* AsteroidsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1642C41CC82FB6005933AB /* AsteroidsUITests.swift */; };
+		FAB5EC051CE1B605005551B4 /* GameSceneMiller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5EC041CE1B605005551B4 /* GameSceneMiller.swift */; };
+		FAB5EC071CE1BA99005551B4 /* GameSceneMiller.sks in Resources */ = {isa = PBXBuildFile; fileRef = FAB5EC061CE1BA99005551B4 /* GameSceneMiller.sks */; };
+		FAB5EC091CE1BAED005551B4 /* GameSceneLee.sks in Resources */ = {isa = PBXBuildFile; fileRef = FAB5EC081CE1BAED005551B4 /* GameSceneLee.sks */; };
+		FAB5EC0B1CE1BB0A005551B4 /* GameSceneLee.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5EC0A1CE1BB0A005551B4 /* GameSceneLee.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA140D011CCFA51D000A80D5 /* MenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
+		FA140D031CCFA596000A80D5 /* MenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MenuScene.sks; sourceTree = "<group>"; };
 		FA16429D1CC82FB5005933AB /* Asteroids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Asteroids.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1642A01CC82FB5005933AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA1642A21CC82FB5005933AB /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -51,6 +59,10 @@
 		FA1642C01CC82FB6005933AB /* AsteroidsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsteroidsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1642C41CC82FB6005933AB /* AsteroidsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsteroidsUITests.swift; sourceTree = "<group>"; };
 		FA1642C61CC82FB6005933AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAB5EC041CE1B605005551B4 /* GameSceneMiller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSceneMiller.swift; sourceTree = "<group>"; };
+		FAB5EC061CE1BA99005551B4 /* GameSceneMiller.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameSceneMiller.sks; sourceTree = "<group>"; };
+		FAB5EC081CE1BAED005551B4 /* GameSceneLee.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameSceneLee.sks; sourceTree = "<group>"; };
+		FAB5EC0A1CE1BB0A005551B4 /* GameSceneLee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSceneLee.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +114,14 @@
 			isa = PBXGroup;
 			children = (
 				FA1642A01CC82FB5005933AB /* AppDelegate.swift */,
+				FAB5EC081CE1BAED005551B4 /* GameSceneLee.sks */,
+				FAB5EC061CE1BA99005551B4 /* GameSceneMiller.sks */,
 				FA1642A21CC82FB5005933AB /* GameScene.sks */,
+				FA140D031CCFA596000A80D5 /* MenuScene.sks */,
 				FA1642A41CC82FB5005933AB /* GameScene.swift */,
+				FAB5EC041CE1B605005551B4 /* GameSceneMiller.swift */,
+				FAB5EC0A1CE1BB0A005551B4 /* GameSceneLee.swift */,
+				FA140D011CCFA51D000A80D5 /* MenuScene.swift */,
 				FA1642A61CC82FB5005933AB /* GameViewController.swift */,
 				FA1642A81CC82FB5005933AB /* Main.storyboard */,
 				FA1642AB1CC82FB5005933AB /* Assets.xcassets */,
@@ -237,8 +255,11 @@
 			files = (
 				FA1642A31CC82FB5005933AB /* GameScene.sks in Resources */,
 				FA1642AF1CC82FB5005933AB /* LaunchScreen.storyboard in Resources */,
+				FAB5EC091CE1BAED005551B4 /* GameSceneLee.sks in Resources */,
 				FA1642AC1CC82FB5005933AB /* Assets.xcassets in Resources */,
+				FA140D041CCFA596000A80D5 /* MenuScene.sks in Resources */,
 				FA1642AA1CC82FB5005933AB /* Main.storyboard in Resources */,
+				FAB5EC071CE1BA99005551B4 /* GameSceneMiller.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +284,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB5EC051CE1B605005551B4 /* GameSceneMiller.swift in Sources */,
 				FA1642A51CC82FB5005933AB /* GameScene.swift in Sources */,
+				FA140D021CCFA51D000A80D5 /* MenuScene.swift in Sources */,
+				FAB5EC0B1CE1BB0A005551B4 /* GameSceneLee.swift in Sources */,
 				FA1642A71CC82FB5005933AB /* GameViewController.swift in Sources */,
 				FA1642A11CC82FB5005933AB /* AppDelegate.swift in Sources */,
 			);
@@ -494,6 +518,7 @@
 				FA1642CB1CC82FB6005933AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA1642CC1CC82FB6005933AB /* Build configuration list for PBXNativeTarget "AsteroidsTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +527,7 @@
 				FA1642CE1CC82FB6005933AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA1642CF1CC82FB6005933AB /* Build configuration list for PBXNativeTarget "AsteroidsUITests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +536,7 @@
 				FA1642D11CC82FB6005933AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
